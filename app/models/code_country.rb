@@ -1,0 +1,2 @@
+class CodeCountry < ActiveRecord::Base
+end

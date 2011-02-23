@@ -1,0 +1,42 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="MSSmartTagsPreventParsing" content="true" /> 
+    <title>MOPH</title> 
+    <%= stylesheet_link_tag '/javascripts/extjs/resources/css/ext-all', 
+							'share', 'icons', 
+							'/javascripts/extjs/examples/ux/css/RowEditor', 
+							'/javascripts/extjs/ux/Ext.ux.grid.RowActions.css',
+							'/javascripts/extjs/ux/gridsummary', 
+							'/javascripts/extjs/examples/ux/fileuploadfield/css/fileuploadfield',
+							'/javascripts/extjs/examples/ux/css/MultiSelect.css' %>   
+							
+	 
+
+</head>
+ 
+<body>
+<div id="loading-mask" style=""></div>
+  <div id="loading">
+    <div class="loading-indicator">
+        <img src="/images/large-loading.gif" width="32" height="32" style="margin-right:8px;" align="absmiddle"/>
+        Loading...
+    </div>
+</div>
+<%= javascript_include_tag 'extjs/adapter/ext/ext-base',
+							'extjs/ext-all-debug',
+							'extjs/examples/ux/RowEditor',
+							'extjs/ux/Ext.ux.grid.Search',
+							'extjs/examples/ux/CheckColumn',
+							'extjs/ux/inlineItems',
+							'extjs/ux/helpText',
+							'extjs/ux/gridsummary',
+							'extjs/ux/Ext.ux.grid.RowActions',
+							'extjs/examples/ux/RowExpander.js',
+							'extjs/examples/ux/fileuploadfield/FileUploadField',
+							'extjs/examples/ux/MultiSelect.js',
+							'extjs/examples/ux/ItemSelector.js' %>	
+<%= @content_for_layout %>
+</body>
+</html>

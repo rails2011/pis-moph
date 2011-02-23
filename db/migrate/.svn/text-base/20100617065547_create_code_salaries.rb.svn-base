@@ -1,0 +1,19 @@
+class CreateCodeSalaries < ActiveRecord::Migration
+  def self.up
+    create_table :code_salaries do |t|
+      t.integer     :c
+      t.decimal     :salary, :precision => 8, :scale => 2
+      t.string      :flagbound
+      t.decimal     :cstep, :precision => 3, :scale => 1
+      t.decimal     :newsal1
+      t.decimal     :newsal2
+      t.decimal     :newsal3
+      t.string      :upd_user
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :code_salaries
+  end
+end

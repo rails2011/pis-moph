@@ -1,0 +1,2 @@
+class CodeGrouplevel < ActiveRecord::Base
+end

@@ -1,0 +1,2 @@
+module DataPisAbsentHelper
+end

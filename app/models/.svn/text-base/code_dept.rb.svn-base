@@ -1,0 +1,2 @@
+class CodeDept < ActiveRecord::Base
+end

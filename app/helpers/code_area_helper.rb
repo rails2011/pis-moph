@@ -1,0 +1,2 @@
+module CodeAreaHelper
+end

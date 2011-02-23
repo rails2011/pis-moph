@@ -1,0 +1,118 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="MSSmartTagsPreventParsing" content="true" /> 
+    <title>MOPH</title> 
+    <%= stylesheet_link_tag '/javascripts/extjs/resources/css/ext-all', 
+							'share', 'icons', 
+							'/javascripts/extjs/examples/ux/css/RowEditor', 
+							'/javascripts/extjs/ux/Ext.ux.grid.RowActions.css',
+							'/javascripts/extjs/ux/gridsummary', 
+							'/javascripts/extjs/examples/ux/fileuploadfield/css/fileuploadfield',
+							'/javascripts/extjs/examples/ux/css/MultiSelect.css' %>
+</head>
+ 
+<body>
+<div id="loading-mask" style=""></div>
+  <div id="loading">
+    <div class="loading-indicator">
+        <img src="/images/large-loading.gif" width="32" height="32" style="margin-right:8px;" align="absmiddle"/>
+        Loading...
+    </div>
+</div>
+<%= javascript_include_tag 'extjs/adapter/ext/ext-base',
+							'extjs/ext-all-debug',
+							'extjs/examples/ux/RowEditor',
+							'extjs/ux/Ext.ux.grid.Search',
+							'extjs/examples/ux/CheckColumn',
+							'extjs/ux/inlineItems',
+							'extjs/ux/helpText',
+							'extjs/ux/gridsummary',
+							'extjs/ux/Ext.ux.grid.RowActions',
+							'extjs/examples/ux/RowExpander.js',
+							'extjs/examples/ux/fileuploadfield/FileUploadField',
+							'extjs/examples/ux/MultiSelect.js',
+							'extjs/examples/ux/ItemSelector.js',
+							'json2',
+							'chromecal',
+							'extjs/ux/date_th' %>	
+<script>
+	function to_date_i(dt){
+		if (dt == null){
+			return "";
+		}
+		dt = dt.split("-");
+		return dt[2]+"/"+dt[1]+"/"+dt[0];
+	}
+	function readDataGrid(Json){
+		var txtsend = new Array();
+		for (keys in Json)
+		{
+			if (Json[keys].data)
+			{										
+				var myJSONText = JSON.stringify(Json[keys].data, function (key, value) {return value;	});										
+				txtsend.push(myJSONText);
+			}
+		}								
+		return	'['+txtsend.join(',')+']';
+	}
+	function DaysInMonth(Y, M) {
+	    with (new Date(Y, M, 1, 12)) {
+	        setDate(0);
+	        return getDate();
+	    }
+	}
+	function datediff(date1, date2) {
+	    var y1 = date1.getFullYear(), m1 = date1.getMonth(), d1 = date1.getDate(),
+		 y2 = date2.getFullYear(), m2 = date2.getMonth(), d2 = date2.getDate();
+	    if (d1 < d2) {
+	        m1--;
+	        d1 += DaysInMonth(y2, m2);
+	    }
+	    if (m1 < m2) {
+	        y1--;
+	        m1 += 12;
+	    }
+	    return [y1 - y2, m1 - m2, d1 - d2];
+	}
+	function calage(dt,dt_min){
+		var dat = new Date();
+		var curday = dat.getDate();
+		var curmon = dat.getMonth()+1;
+		var curyear = dat.getFullYear();
+		dt = dt.split("/");
+		var calday = Number(dt[0]);
+		var calmon = Number(dt[1]);
+		var calyear = Number(dt[2]);
+		if(curday == "" || curmon=="" || curyear=="" || calday=="" || calmon=="" || calyear=="")
+		{
+			alert("กรุณาตรวจข้อมูลวันที่ให้ถูกต้อง");
+		}	
+		else
+		{
+			var curd = new Date(curyear,curmon-1,curday);
+			var cald = new Date(calyear,calmon-1,calday);
+			if (dt_min != undefined){				
+				var curday = Number(dt[0]);
+				var curmon = Number(dt[1]);
+				var curyear = Number(dt[2]);				
+				dt_min = dt_min.split("/");
+				var calday = Number(dt_min[0]);
+				var calmon = Number(dt_min[1]);
+				var calyear = Number(dt_min[2]);				
+				var curd = new Date(curyear,curmon-1,curday);
+				var cald = new Date(calyear,calmon-1,calday);
+			}			
+			var diff =  Date.UTC(curyear,curmon,curday,0,0,0) - Date.UTC(calyear,calmon,calday,0,0,0);
+			var dife = datediff(curd,cald);
+			return dife;			
+		}
+	}
+	
+</script>
+
+
+<%= @content_for_layout %>
+</body>
+</html>

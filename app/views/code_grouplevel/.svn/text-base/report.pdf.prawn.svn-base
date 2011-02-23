@@ -1,0 +1,23 @@
+pdf.font "#{Prawn::BASEDIR}/data/fonts/tahoma.ttf" 
+records = @records.map do |records|
+  [
+	records.ccode.to_i,
+	records.cname,
+	records.scname,
+	records.stdcode,
+	records.minsal.to_f,
+	records.maxsal.to_f,
+	records.gname,
+	records.clname
+  ]
+end
+
+pdf.table records, 
+	:row_colors 		=> ["FFFFFF","DDDDDD"],
+	:align_headers		=> :center,
+	:border_style 		=> :grid,
+	:headers 			=> ["รหัส","ชื่อ","คำย่อ","รหัสแทน","เงินเดือนขั้นต่ำ","เงินเดือนขั้นสูง","กลุ่ม","ประเภท"],
+	:align 				=> { 0 => :center, 1 => :left, 2 => :left, 3 => :left, 4 => :right, 5 => :right, 6 => :left, 7 => :left },
+	:position			=> :center
+
+

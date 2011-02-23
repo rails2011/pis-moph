@@ -1,0 +1,2 @@
+module CodeAmphurHelper
+end

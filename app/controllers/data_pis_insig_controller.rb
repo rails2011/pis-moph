@@ -1,0 +1,218 @@
+class DataPisInsigController < ApplicationController
+  skip_before_filter :verify_authenticity_token
+  def read
+    limit = params[:limit]
+    start = params[:start]
+    sql = <<-EOF
+      select
+        pi.id
+        ,pi.pis_personel_id
+        ,pi.dccode
+        ,pi.dcyear
+        ,pi.book
+        ,pi.section
+        ,pi.pageno
+        ,pi.seq
+        ,pi.recdate
+        ,pi.kitjadate
+        ,pi.retdate
+        ,pi.billno
+        ,pi.bookno
+        ,pi.billdate
+        ,pi.money
+        ,pi.poscode
+        ,pi.excode
+        ,pi.epcode
+        ,pi.c
+        ,pi.ptcode
+        ,pi.note      
+        ,cd.dcname
+        ,cp.posname
+        ,ce.exname
+        ,cxp.expert
+        ,cpt.ptname        
+      from
+        pis_insigs pi
+        left join code_decoratypes cd on pi.dccode = cd.dccode
+        left join code_positions cp on pi.poscode = cp.poscode
+        left join code_executives ce on pi.excode = ce.excode
+        left join code_experts cxp on pi.epcode = cxp.epcode
+        left join code_postypes cpt on pi.ptcode = cpt.ptcode
+    EOF
+    
+    sql = sql + "   where pi.pis_personel_id = '#{params[:pis_personel_id]}'"           
+    rs = PisInsig.find_by_sql(sql+" limit #{limit} offset #{start} ")
+    return_data = Hash.new()    
+    return_data[:totalCount] = PisInsig.find_by_sql(sql).length
+    return_data[:records]   = rs.collect{|u| {
+      :id                    => u.id,
+      :pis_personel_id        => u.pis_personel_id,
+      :dccode                 => u.dccode,
+      :dcyear                 => u.dcyear,
+      :book                   => u.book,
+      :section                => u.section,
+      :pageno                 => u.pageno,
+      :seq                    => u.seq,
+      :recdate                => u.recdate,
+      :kitjadate              => u.kitjadate,
+      :retdate                => u.retdate,
+      :billno                 => u.billno,
+      :bookno                 => u.bookno,
+      :billdate               => u.billdate,
+      :money                  => u.money,
+      :poscode                => u.poscode,
+      :excode                 => u.excode,
+      :epcode                 => u.epcode,
+      :c                      => u.c,
+      :ptcode                 => u.ptcode,
+      :note                   => u.note,
+      :dcname                 => u.dcname,
+      :posname                => u.posname,
+      :exname                 => u.exname,
+      :expert                 => u.expert,
+      :ptname                 => u.ptname     
+    }}
+    render :text => return_data.to_json, :layout => false
+  end
+
+  def add
+    rs = PisInsig.new(
+        :pis_personel_id           => params[:pis_personel_id],
+        :dccode                     => params[:dccode],
+        :dcyear                     => params[:dcyear],
+        :book                       => params[:book],
+        :section                    => params[:section],
+        :pageno                     => params[:pageno],
+        :seq                        => params[:seq],
+        :recdate                    => to_date_i(params[:recdate]),
+        :kitjadate                  => to_date_i(params[:kitjadate]),
+        :retdate                    => to_date_i(params[:retdate]),
+        :billno                     => params[:billno],
+        :bookno                     => params[:bookno],
+        :billdate                   => to_date_i(params[:billdate]),
+        :money                      => params[:money],
+        :poscode                    => params[:poscode],
+        :excode                     => params[:excode],
+        :epcode                     => params[:epcode],
+        :c                          => params[:c],
+        :ptcode                     => params[:ptcode],
+        :note                       => params[:note]
+    )    
+    if rs.save
+      render :text => "{success:true}",:layout => false
+    else
+      render :text => "{success:false}",:layout => false
+    end
+  end
+  
+  def delete    
+    id = params[:id]
+    if PisInsig.delete(id)
+      render :text => "{success:true}"
+    else
+      render :text => "{success:false}"
+    end       
+  end
+  
+  def search_edit
+    sql = <<-EOF
+      select
+        pi.id
+        ,pi.pis_personel_id
+        ,pi.dccode
+        ,pi.dcyear
+        ,pi.book
+        ,pi.section
+        ,pi.pageno
+        ,pi.seq
+        ,pi.recdate
+        ,pi.kitjadate
+        ,pi.retdate
+        ,pi.billno
+        ,pi.bookno
+        ,pi.billdate
+        ,pi.money
+        ,pi.poscode
+        ,pi.excode
+        ,pi.epcode
+        ,pi.c
+        ,pi.ptcode
+        ,pi.note      
+        ,cd.dcname
+        ,cp.posname
+        ,ce.exname
+        ,cxp.expert
+        ,cpt.ptname        
+      from
+        pis_insigs pi
+        left join code_decoratypes cd on pi.dccode = cd.dccode
+        left join code_positions cp on pi.poscode = cp.poscode
+        left join code_executives ce on pi.excode = ce.excode
+        left join code_experts cxp on pi.epcode = cxp.epcode
+        left join code_postypes cpt on pi.ptcode = cpt.ptcode
+    EOF
+    
+    sql += "where pi.id = '#{params[:id]}'"
+    rs = PisInsig.find_by_sql(sql)[0]    
+    return_data = Hash.new()
+    return_data[:data] = [      
+      :pis_personel_id            => rs[:pis_personel_id],
+      :dccode                     => rs[:dccode],
+      :dcyear                     => rs[:dcyear],
+      :book                       => rs[:book],
+      :section                    => rs[:section],
+      :pageno                     => rs[:pageno],
+      :seq                        => rs[:seq],
+      :recdate                    => rs[:recdate],
+      :kitjadate                  => rs[:kitjadate],
+      :retdate                    => rs[:retdate],
+      :billno                     => rs[:billno],
+      :bookno                     => rs[:bookno],
+      :billdate                   => rs[:billdate],
+      :money                      => rs[:money],
+      :poscode                    => rs[:poscode],
+      :excode                     => rs[:excode],
+      :epcode                     => rs[:epcode],
+      :c                          => rs[:c],
+      :ptcode                     => rs[:ptcode],
+      :note                       => rs[:note]
+    ]               
+    render :text => return_data.to_json, :layout => false    
+  end
+
+  def edit
+    store = PisInsig.find(:all , :conditions => "id = '#{params["id"]}'")[0]    
+    store.pis_personel_id            = params[:pis_personel_id]
+    store.dccode                     = params[:dccode]
+    store.dcyear                     = params[:dcyear]
+    store.book                       = params[:book]
+    store.section                    = params[:section]
+    store.pageno                     = params[:pageno]
+    store.seq                        = params[:seq]
+    store.recdate                    = to_date_i(params[:recdate])
+    store.kitjadate                  = to_date_i(params[:kitjadate])
+    store.retdate                    = to_date_i(params[:retdate])
+    store.billno                     = params[:billno]
+    store.bookno                     = params[:bookno]
+    store.billdate                   = to_date_i(params[:billdate])
+    store.money                      = params[:money]
+    store.poscode                    = params[:poscode]
+    store.excode                     = params[:excode]
+    store.epcode                     = params[:epcode]
+    store.c                          = params[:c]
+    store.ptcode                     = params[:ptcode]
+    store.note                       = params[:note]    
+    if store.save
+      render :text => "{success:true}",:layout => false
+    else
+      render :text => "{success:false}",:layout => false
+    end   
+  end
+  
+  def search_id
+    rs = PisInsig.find(:first,:conditions => "pis_personel_id = '#{params[:pis_personel_id]}'")
+    render :text => "{data:#{(rs.nil?)? "''":rs.id  }}" ,:layout => false
+  end
+  
+  
+end

@@ -1,0 +1,2 @@
+module CodeFinpayHelper
+end

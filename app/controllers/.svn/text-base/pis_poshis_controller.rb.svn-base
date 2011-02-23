@@ -1,0 +1,2 @@
+class PisPoshisController < ApplicationController
+end

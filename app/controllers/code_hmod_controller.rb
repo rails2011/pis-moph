@@ -1,0 +1,2 @@
+class CodeHmodController < ApplicationController
+end

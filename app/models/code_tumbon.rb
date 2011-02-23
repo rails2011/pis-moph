@@ -1,0 +1,2 @@
+class CodeTumbon < ActiveRecord::Base
+end

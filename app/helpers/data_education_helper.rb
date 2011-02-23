@@ -1,0 +1,2 @@
+module DataEducationHelper
+end

@@ -1,0 +1,2 @@
+class CodeSpcodeController < ApplicationController
+end

@@ -1,0 +1,18 @@
+pdf.font "#{Prawn::BASEDIR}/data/fonts/tahoma.ttf" 
+records = @records.map do |records|
+  [
+	records.tmcode,
+	records.tmname,
+	
+  ]
+end
+
+pdf.table records, 
+	:row_colors 		=> ["FFFFFF","DDDDDD"],
+	:align_headers		=> :center,
+	:border_style 		=> :grid,
+	:headers 			=> ["รหัสตำบล","ตำบล"],
+	:align 				=> { 0 => :right, 1 => :left, 2 => :left, 3 => :left },
+	:position			=> :center
+
+

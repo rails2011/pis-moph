@@ -1,0 +1,2 @@
+class CodePrefix < ActiveRecord::Base
+end

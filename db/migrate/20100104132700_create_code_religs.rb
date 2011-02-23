@@ -1,0 +1,16 @@
+class CreateCodeReligs < ActiveRecord::Migration
+  def self.up
+    create_table :code_religs do |t|
+      t.integer :relcode
+      t.string  :relname
+      t.string  :stdcode
+      t.string  :use_status
+      t.string  :upd_user 
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :code_religs
+  end
+end

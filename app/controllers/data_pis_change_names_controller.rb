@@ -1,0 +1,98 @@
+class DataPisChangeNamesController < ApplicationController
+  skip_before_filter :verify_authenticity_token
+  
+  def read
+    sql = <<-EOF
+            select 
+              pis_chgnames.chgno
+              ,code_prefixes.longpre
+              ,pis_chgnames.chgdate
+              ,pis_chgnames.fname
+              ,pis_chgnames.lname
+              ,pis_chgnames.ref
+            from 
+              pis_chgnames 
+              left join code_prefixes on pis_chgnames.precode = code_prefixes.precode
+    EOF
+    sql = sql + " where pis_personel_id = '#{params[:pis_personel_id]}'"
+    rs = PisChgname.find_by_sql(sql)
+    return_data = Hash.new()
+    return_data[:records]   = rs.collect{|u| {
+            :chgno        => u.chgno,
+            :longpre      => u.longpre,
+            :chgdate      => u.chgdate,
+            :fname        => u.fname,
+            :lname        => u.lname,
+            :ref          => u.ref
+    } }
+    render :text => return_data.to_json, :layout => false
+  end
+  
+  def add
+    rs = PisChgname.new()
+    rs.chgdate      = params[:chgdate]
+    rs.fname        = params[:fname2]
+    rs.lname        = params[:lname2]
+    rs.precode      = params[:precode2]
+    rs.ref          = params[:ref2]
+    rs.pis_personel_id = params[:pis_personel_id]
+    if rs.save      
+       #rs_personel = PisPersonel.find(:first,:conditions => "pis_personel_id = '#{params[:pis_personel_id]}'")
+       #rs_personel.fname = params[:fname2]
+       #rs_personel.lname = params[:lname2]
+       #rs_personel.save       
+       render :text => "{success: true}"             
+    else
+       render :text => "{success: false}"
+    end
+  end
+  
+  def delete
+    if PisChgname.delete(params[:chgno])
+      render :text => "{success:true}"
+    else
+      render :text => "{success:false}"
+    end
+  end
+  
+  def search_edit
+    sql = <<-EOF
+            select 
+              pis_chgnames.chgno
+              ,code_prefixes.precode
+              ,pis_chgnames.chgdate
+              ,pis_chgnames.fname
+              ,pis_chgnames.lname
+              ,pis_chgnames.ref
+            from 
+              pis_chgnames 
+              left join code_prefixes on pis_chgnames.precode = code_prefixes.precode
+    EOF
+    sql = sql + " where pis_chgnames.chgno = '#{params[:chgno]}'"
+    rs = PisChgname.find_by_sql(sql)
+    return_data = Hash.new()
+    return_data[:records]   = rs.collect{|u| {
+            :chgno        => u.chgno,
+            :precode      => u.precode,
+            :chgdate      => u.chgdate,
+            :fname        => u.fname,
+            :lname        => u.lname,
+            :ref          => u.ref
+    } }
+    render :text => return_data.to_json, :layout => false
+  end
+  
+  def edit
+    rs = PisChgname.find(:all,:conditions => "chgno = #{params[:chgno]}")[0]
+    rs.chgdate      = params[:chgdate]
+    rs.fname        = params[:fname2]
+    rs.lname        = params[:lname2]
+    rs.precode      = params[:precode2]
+    rs.ref          = params[:ref2]
+    if rs.save
+       render :text => "{success: true}"
+    else
+       render :text => "{success: false}"
+    end
+  end
+end

@@ -1,0 +1,4 @@
+require 'test_helper'
+
+class J18HelperTest < ActionView::TestCase
+end

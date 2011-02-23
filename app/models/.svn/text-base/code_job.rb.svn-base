@@ -1,0 +1,2 @@
+class CodeJob < ActiveRecord::Base
+end

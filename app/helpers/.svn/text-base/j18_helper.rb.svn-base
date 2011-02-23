@@ -1,0 +1,2 @@
+module J18Helper
+end

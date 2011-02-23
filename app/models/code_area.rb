@@ -1,0 +1,2 @@
+class CodeArea < ActiveRecord::Base
+end
