@@ -1,0 +1,877 @@
+
+
+Processing CodeController#index (for 24.98.109.144 at 2011-02-24 08:15:13) [GET]
+Rendering template within layouts/extjs_layout
+Rendering code/index
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://24.98.109.144/]
+
+
+Processing CodeController#index (for 203.157.4.233 at 2011-02-24 08:23:41) [GET]
+Rendering template within layouts/extjs_layout
+Rendering code/index
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://203.157.240.10/]
+
+
+Processing ApplicationController#index (for 203.157.4.233 at 2011-02-24 08:23:43) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/chromecal.js" with {:method=>:get}):
+  passenger (2.2.4) lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  passenger (2.2.4) lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:162:in `start'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /tmp/pis-moph/public/404.html (404 Not Found)
+
+
+Processing DataPersonalController#read (for 203.157.4.233 at 2011-02-24 08:29:04) [POST]
+  Parameters: {"start"=>"0", "limit"=>"20"}
+Completed in 303ms (View: 0, DB: 11) | 200 OK [http://203.157.240.10/data_personal/read]
+
+
+Processing PerformPersonNowController#search_edit (for 203.157.4.233 at 2011-02-24 08:29:07) [POST]
+  Parameters: {"id"=>"1"}
+Completed in 19ms (View: 0, DB: 3) | 200 OK [http://203.157.240.10/perform_person_now/search_edit]
+
+
+Processing CodeJ18statusController#genres (for 203.157.4.233 at 2011-02-24 08:29:07) [GET]
+  Parameters: {"_dc"=>"1298510820249"}
+Completed in 5ms (View: 0, DB: 0) | 200 OK [http://203.157.240.10/code_j18status/genres?_dc=1298510820249]
+
+
+Processing CodeMinisController#genres (for 203.157.4.233 at 2011-02-24 08:29:07) [GET]
+  Parameters: {"_dc"=>"1298510820249"}
+Completed in 30ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_minis/genres?_dc=1298510820249]
+
+
+Processing CodeDeptController#genres (for 203.157.4.233 at 2011-02-24 08:29:07) [GET]
+  Parameters: {"_dc"=>"1298510820250"}
+Completed in 39ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_dept/genres?_dc=1298510820250]
+
+
+Processing CodeDivController#genres (for 203.157.4.233 at 2011-02-24 08:29:07) [GET]
+  Parameters: {"_dc"=>"1298510820250"}
+Completed in 81ms (View: 0, DB: 2) | 200 OK [http://203.157.240.10/code_div/genres?_dc=1298510820250]
+
+
+Processing CodeTradeController#genres (for 203.157.4.233 at 2011-02-24 08:29:07) [GET]
+  Parameters: {"_dc"=>"1298510820311"}
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_trade/genres?_dc=1298510820311]
+
+
+Processing CodeJobController#genres (for 203.157.4.233 at 2011-02-24 08:29:07) [GET]
+  Parameters: {"_dc"=>"1298510820306"}
+Completed in 234ms (View: 0, DB: 2) | 200 OK [http://203.157.240.10/code_job/genres?_dc=1298510820306]
+
+
+Processing CodeSectController#genres (for 203.157.4.233 at 2011-02-24 08:29:07) [GET]
+  Parameters: {"_dc"=>"1298510820306"}
+Completed in 224ms (View: 0, DB: 2) | 200 OK [http://203.157.240.10/code_sect/genres?_dc=1298510820306]
+
+
+Processing CodeMajorController#genres (for 203.157.4.233 at 2011-02-24 08:29:07) [GET]
+  Parameters: {"_dc"=>"1298510820311"}
+Completed in 281ms (View: 0, DB: 2) | 200 OK [http://203.157.240.10/code_major/genres?_dc=1298510820311]
+
+
+Processing CodeQualifyController#genres (for 203.157.4.233 at 2011-02-24 08:29:07) [GET]
+  Parameters: {"_dc"=>"1298510820310"}
+Completed in 195ms (View: 0, DB: 3) | 200 OK [http://203.157.240.10/code_qualify/genres?_dc=1298510820310]
+
+
+Processing CodeSectController#genres (for 203.157.4.233 at 2011-02-24 08:29:08) [GET]
+  Parameters: {"_dc"=>"1298510820306"}
+Completed in 77ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_sect/genres?_dc=1298510820306]
+
+
+Processing CodeFinpayController#read (for 203.157.4.233 at 2011-02-24 08:29:33) [POST]
+  Parameters: {"start"=>"0", "limit"=>"20"}
+Completed in 10ms (View: 0, DB: 5) | 200 OK [http://203.157.240.10/code_finpay/read]
+
+
+Processing CodeQualifyController#read (for 203.157.4.233 at 2011-02-24 08:29:41) [POST]
+  Parameters: {"start"=>"0", "limit"=>"20"}
+
+NoMethodError (undefined method `shortpre' for #<CodeQualify:0x2aaaad4e2960>):
+  app/controllers/code_qualify_controller.rb:22:in `read'
+  app/controllers/code_qualify_controller.rb:17:in `collect'
+  app/controllers/code_qualify_controller.rb:17:in `read'
+  passenger (2.2.4) lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  passenger (2.2.4) lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:162:in `start'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /tmp/pis-moph/public/500.html (500 Internal Server Error)
+
+
+Processing CodeEdulevelController#read (for 203.157.4.233 at 2011-02-24 08:29:49) [POST]
+  Parameters: {"start"=>"0", "limit"=>"20"}
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_edulevel/read]
+
+
+Processing CodeMajorController#read (for 203.157.4.233 at 2011-02-24 08:29:54) [POST]
+  Parameters: {"start"=>"0", "limit"=>"20"}
+Completed in 10ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_major/read]
+
+
+Processing CodeQualifyController#read (for 203.157.4.233 at 2011-02-24 08:30:09) [POST]
+  Parameters: {"start"=>"0", "limit"=>"20"}
+
+NoMethodError (undefined method `shortpre' for #<CodeQualify:0x2aaaad41c4b8>):
+  app/controllers/code_qualify_controller.rb:22:in `read'
+  app/controllers/code_qualify_controller.rb:17:in `collect'
+  app/controllers/code_qualify_controller.rb:17:in `read'
+  passenger (2.2.4) lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  passenger (2.2.4) lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:162:in `start'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /tmp/pis-moph/public/500.html (500 Internal Server Error)
+
+
+Processing CodeMinisController#read (for 203.157.4.233 at 2011-02-24 08:30:15) [POST]
+  Parameters: {"start"=>"0", "limit"=>"20"}
+Completed in 9ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_minis/read]
+
+
+Processing CodeDeptController#read (for 203.157.4.233 at 2011-02-24 08:30:22) [POST]
+  Parameters: {"start"=>"0", "limit"=>"20"}
+Completed in 10ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_dept/read]
+
+
+Processing CodeController#index (for 203.157.4.233 at 2011-02-24 08:31:04) [GET]
+Rendering template within layouts/extjs_layout
+Rendering code/index
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://203.157.240.10/]
+
+
+Processing ApplicationController#index (for 203.157.4.233 at 2011-02-24 08:31:05) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/chromecal.js" with {:method=>:get}):
+  passenger (2.2.4) lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  passenger (2.2.4) lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:162:in `start'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /tmp/pis-moph/public/404.html (404 Not Found)
+
+
+Processing DataPersonalController#read (for 203.157.4.233 at 2011-02-24 08:31:15) [POST]
+  Parameters: {"start"=>"0", "limit"=>"20"}
+Completed in 214ms (View: 0, DB: 10) | 200 OK [http://203.157.240.10/data_personal/read]
+
+
+Processing PerformPersonNowController#search_edit (for 203.157.4.233 at 2011-02-24 08:31:17) [POST]
+  Parameters: {"id"=>"2"}
+Completed in 29ms (View: 0, DB: 3) | 200 OK [http://203.157.240.10/perform_person_now/search_edit]
+
+
+Processing CodeJ18statusController#genres (for 203.157.4.233 at 2011-02-24 08:31:17) [GET]
+  Parameters: {"_dc"=>"1298510950364"}
+Completed in 5ms (View: 0, DB: 0) | 200 OK [http://203.157.240.10/code_j18status/genres?_dc=1298510950364]
+
+
+Processing CodeMinisController#genres (for 203.157.4.233 at 2011-02-24 08:31:17) [GET]
+  Parameters: {"_dc"=>"1298510950364"}
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://203.157.240.10/code_minis/genres?_dc=1298510950364]
+
+
+Processing CodeDeptController#genres (for 203.157.4.233 at 2011-02-24 08:31:17) [GET]
+  Parameters: {"_dc"=>"1298510950364"}
+Completed in 26ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_dept/genres?_dc=1298510950364]
+
+
+Processing CodeDivController#genres (for 203.157.4.233 at 2011-02-24 08:31:17) [GET]
+  Parameters: {"_dc"=>"1298510950364"}
+Completed in 43ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_div/genres?_dc=1298510950364]
+
+
+Processing CodeSectController#genres (for 203.157.4.233 at 2011-02-24 08:31:17) [GET]
+  Parameters: {"_dc"=>"1298510950365"}
+Completed in 159ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_sect/genres?_dc=1298510950365]
+
+
+Processing CodeJobController#genres (for 203.157.4.233 at 2011-02-24 08:31:17) [GET]
+  Parameters: {"_dc"=>"1298510950365"}
+Completed in 124ms (View: 0, DB: 2) | 200 OK [http://203.157.240.10/code_job/genres?_dc=1298510950365]
+
+
+Processing CodeSectController#genres (for 203.157.4.233 at 2011-02-24 08:31:17) [GET]
+  Parameters: {"_dc"=>"1298510950365"}
+Completed in 180ms (View: 0, DB: 2) | 200 OK [http://203.157.240.10/code_sect/genres?_dc=1298510950365]
+
+
+Processing CodeController#index (for 203.157.4.233 at 2011-02-24 08:31:44) [GET]
+Rendering template within layouts/extjs_layout
+Rendering code/index
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://203.157.240.10/]
+
+
+Processing ApplicationController#index (for 203.157.4.233 at 2011-02-24 08:31:44) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/chromecal.js" with {:method=>:get}):
+  passenger (2.2.4) lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  passenger (2.2.4) lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:162:in `start'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /tmp/pis-moph/public/404.html (404 Not Found)
+
+
+Processing CodeQualifyController#read (for 203.157.4.233 at 2011-02-24 08:31:55) [POST]
+  Parameters: {"start"=>"0", "limit"=>"20"}
+
+NoMethodError (undefined method `shortpre' for #<CodeQualify:0x2aaaad4b0b68>):
+  app/controllers/code_qualify_controller.rb:22:in `read'
+  app/controllers/code_qualify_controller.rb:17:in `collect'
+  app/controllers/code_qualify_controller.rb:17:in `read'
+  passenger (2.2.4) lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  passenger (2.2.4) lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:162:in `start'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /tmp/pis-moph/public/500.html (500 Internal Server Error)
+
+
+Processing CodeProvinceController#genres (for 203.157.4.233 at 2011-02-24 08:32:06) [POST]
+  Parameters: {"query"=>""}
+Completed in 19ms (View: 0, DB: 4) | 200 OK [http://203.157.240.10/code_province/genres]
+
+
+Processing CodeAmphurController#genres (for 203.157.4.233 at 2011-02-24 08:32:07) [POST]
+  Parameters: {"provcode"=>"81", "random"=>"0.6856234376318753"}
+Completed in 17ms (View: 0, DB: 11) | 200 OK [http://203.157.240.10/code_amphur/genres]
+
+
+Processing CodeTumbonController#read (for 203.157.4.233 at 2011-02-24 08:32:07) [POST]
+  Parameters: {"random"=>"0.9499935563653708"}
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://203.157.240.10/code_tumbon/read]
+
+
+Processing CodeAmphurController#genres (for 203.157.4.233 at 2011-02-24 08:32:09) [POST]
+  Parameters: {"provcode"=>"81", "random"=>"0.6856234376318753", "query"=>""}
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_amphur/genres]
+
+
+Processing CodeTumbonController#read (for 203.157.4.233 at 2011-02-24 08:32:10) [POST]
+  Parameters: {"provcode"=>"81", "start"=>"0", "amcode"=>"4", "limit"=>"20"}
+Completed in 23ms (View: 0, DB: 16) | 200 OK [http://203.157.240.10/code_tumbon/read]
+
+
+Processing CodeController#index (for 203.157.4.233 at 2011-02-24 08:38:41) [GET]
+Rendering template within layouts/extjs_layout
+Rendering code/index
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://203.157.240.10/]
+
+
+Processing ApplicationController#index (for 203.157.4.233 at 2011-02-24 08:38:42) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/chromecal.js" with {:method=>:get}):
+  passenger (2.2.4) lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  passenger (2.2.4) lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:162:in `start'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /tmp/pis-moph/public/404.html (404 Not Found)
+
+
+Processing CodeController#index (for 203.157.4.233 at 2011-02-24 08:47:56) [GET]
+Rendering template within layouts/extjs_layout
+Rendering code/index
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://203.157.240.10/]
+
+
+Processing ApplicationController#index (for 203.157.4.233 at 2011-02-24 08:47:56) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/chromecal.js" with {:method=>:get}):
+  passenger (2.2.4) lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  passenger (2.2.4) lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:162:in `start'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /tmp/pis-moph/public/404.html (404 Not Found)
+
+
+Processing DataPersonalController#read (for 203.157.4.233 at 2011-02-24 08:48:07) [POST]
+  Parameters: {"start"=>"0", "limit"=>"20"}
+Completed in 304ms (View: 0, DB: 11) | 200 OK [http://203.157.240.10/data_personal/read]
+
+
+Processing PerformPersonNowController#search_edit (for 203.157.4.233 at 2011-02-24 08:48:09) [POST]
+  Parameters: {"id"=>"3"}
+Completed in 27ms (View: 0, DB: 3) | 200 OK [http://203.157.240.10/perform_person_now/search_edit]
+
+
+Processing CodeJ18statusController#genres (for 203.157.4.233 at 2011-02-24 08:48:09) [GET]
+  Parameters: {"_dc"=>"1298511965374"}
+Completed in 5ms (View: 0, DB: 0) | 200 OK [http://203.157.240.10/code_j18status/genres?_dc=1298511965374]
+
+
+Processing CodeDivController#genres (for 203.157.4.233 at 2011-02-24 08:48:09) [GET]
+  Parameters: {"_dc"=>"1298511965375"}
+Completed in 43ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_div/genres?_dc=1298511965375]
+
+
+Processing CodeMinisController#genres (for 203.157.4.233 at 2011-02-24 08:48:09) [GET]
+  Parameters: {"_dc"=>"1298511965374"}
+Completed in 14ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_minis/genres?_dc=1298511965374]
+
+
+Processing CodeDeptController#genres (for 203.157.4.233 at 2011-02-24 08:48:09) [GET]
+  Parameters: {"_dc"=>"1298511965374"}
+Completed in 32ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_dept/genres?_dc=1298511965374]
+
+
+Processing CodeSectController#genres (for 203.157.4.233 at 2011-02-24 08:48:09) [GET]
+  Parameters: {"_dc"=>"1298511965375"}
+Completed in 203ms (View: 0, DB: 3) | 200 OK [http://203.157.240.10/code_sect/genres?_dc=1298511965375]
+
+
+Processing CodeSectController#genres (for 203.157.4.233 at 2011-02-24 08:48:09) [GET]
+  Parameters: {"_dc"=>"1298511965375"}
+Completed in 196ms (View: 0, DB: 3) | 200 OK [http://203.157.240.10/code_sect/genres?_dc=1298511965375]
+
+
+Processing CodeJobController#genres (for 203.157.4.233 at 2011-02-24 08:48:11) [GET]
+  Parameters: {"_dc"=>"1298511965375"}
+Completed in 111ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_job/genres?_dc=1298511965375]
+
+
+Processing CodeController#index (for 203.157.200.65 at 2011-02-24 08:50:27) [GET]
+Rendering template within layouts/extjs_layout
+Rendering code/index
+Completed in 15ms (View: 14, DB: 0) | 200 OK [http://203.157.240.10/]
+
+
+Processing ApplicationController#index (for 203.157.200.65 at 2011-02-24 08:50:28) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/chromecal.js" with {:method=>:get}):
+  passenger (2.2.4) lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  passenger (2.2.4) lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:162:in `start'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /tmp/pis-moph/public/404.html (404 Not Found)
+
+
+Processing DataPersonalController#read (for 203.157.200.65 at 2011-02-24 08:50:36) [POST]
+  Parameters: {"start"=>"0", "limit"=>"20"}
+Completed in 215ms (View: 0, DB: 10) | 200 OK [http://203.157.240.10/data_personal/read]
+
+
+Processing PerformPersonNowController#search_edit (for 203.157.200.65 at 2011-02-24 08:50:38) [POST]
+  Parameters: {"id"=>"2"}
+Completed in 29ms (View: 0, DB: 3) | 200 OK [http://203.157.240.10/perform_person_now/search_edit]
+
+
+Processing CodeJ18statusController#genres (for 203.157.200.65 at 2011-02-24 08:50:39) [GET]
+  Parameters: {"_dc"=>"1298512241495"}
+Completed in 5ms (View: 0, DB: 0) | 200 OK [http://203.157.240.10/code_j18status/genres?_dc=1298512241495]
+
+
+Processing CodeMinisController#genres (for 203.157.200.65 at 2011-02-24 08:50:39) [GET]
+  Parameters: {"_dc"=>"1298512241495"}
+Completed in 10ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_minis/genres?_dc=1298512241495]
+
+
+Processing CodeDeptController#genres (for 203.157.200.65 at 2011-02-24 08:50:39) [GET]
+  Parameters: {"_dc"=>"1298512241495"}
+Completed in 27ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_dept/genres?_dc=1298512241495]
+
+
+Processing CodeDivController#genres (for 203.157.200.65 at 2011-02-24 08:50:39) [GET]
+  Parameters: {"_dc"=>"1298512241495"}
+Completed in 50ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_div/genres?_dc=1298512241495]
+
+
+Processing CodeSectController#genres (for 203.157.200.65 at 2011-02-24 08:50:39) [GET]
+  Parameters: {"_dc"=>"1298512241495"}
+Completed in 201ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_sect/genres?_dc=1298512241495]
+
+
+Processing CodeSectController#genres (for 203.157.200.65 at 2011-02-24 08:50:39) [GET]
+  Parameters: {"_dc"=>"1298512241495"}
+Completed in 260ms (View: 0, DB: 2) | 200 OK [http://203.157.240.10/code_sect/genres?_dc=1298512241495]
+
+
+Processing CodeJobController#genres (for 203.157.200.65 at 2011-02-24 08:50:39) [GET]
+  Parameters: {"_dc"=>"1298512241495"}
+Completed in 257ms (View: 0, DB: 11) | 200 OK [http://203.157.240.10/code_job/genres?_dc=1298512241495]
+
+
+Processing CodeController#index (for 203.157.4.233 at 2011-02-24 08:52:20) [GET]
+Rendering template within layouts/extjs_layout
+Rendering code/index
+Completed in 6ms (View: 6, DB: 0) | 200 OK [http://203.157.240.10/]
+
+
+Processing ApplicationController#index (for 203.157.4.233 at 2011-02-24 08:52:20) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/chromecal.js" with {:method=>:get}):
+  passenger (2.2.4) lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  passenger (2.2.4) lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:162:in `start'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /tmp/pis-moph/public/404.html (404 Not Found)
+
+
+Processing DataPersonalController#read (for 203.157.4.233 at 2011-02-24 08:52:33) [POST]
+  Parameters: {"start"=>"0", "limit"=>"20"}
+Completed in 260ms (View: 0, DB: 9) | 200 OK [http://203.157.240.10/data_personal/read]
+
+
+Processing PerformPersonNowController#search_edit (for 203.157.4.233 at 2011-02-24 08:52:36) [POST]
+  Parameters: {"id"=>"2"}
+Completed in 8ms (View: 0, DB: 2) | 200 OK [http://203.157.240.10/perform_person_now/search_edit]
+
+
+Processing CodeJ18statusController#genres (for 203.157.4.233 at 2011-02-24 08:52:36) [GET]
+  Parameters: {"_dc"=>"1298512232875"}
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://203.157.240.10/code_j18status/genres?_dc=1298512232875]
+
+
+Processing CodeMinisController#genres (for 203.157.4.233 at 2011-02-24 08:52:36) [GET]
+  Parameters: {"_dc"=>"1298512232875"}
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://203.157.240.10/code_minis/genres?_dc=1298512232875]
+
+
+Processing CodeDeptController#genres (for 203.157.4.233 at 2011-02-24 08:52:36) [GET]
+  Parameters: {"_dc"=>"1298512232875"}
+Completed in 24ms (View: 0, DB: 0) | 200 OK [http://203.157.240.10/code_dept/genres?_dc=1298512232875]
+
+
+Processing CodeDivController#genres (for 203.157.4.233 at 2011-02-24 08:52:36) [GET]
+  Parameters: {"_dc"=>"1298512232875"}
+Completed in 43ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_div/genres?_dc=1298512232875]
+
+
+Processing CodeSectController#genres (for 203.157.4.233 at 2011-02-24 08:52:36) [GET]
+  Parameters: {"_dc"=>"1298512232875"}
+Completed in 72ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_sect/genres?_dc=1298512232875]
+
+
+Processing CodeSectController#genres (for 203.157.4.233 at 2011-02-24 08:52:36) [GET]
+  Parameters: {"_dc"=>"1298512232875"}
+Completed in 73ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_sect/genres?_dc=1298512232875]
+
+
+Processing CodeJobController#genres (for 203.157.4.233 at 2011-02-24 08:52:37) [GET]
+  Parameters: {"_dc"=>"1298512232875"}
+Completed in 164ms (View: 0, DB: 2) | 200 OK [http://203.157.240.10/code_job/genres?_dc=1298512232875]
+
+
+Processing CodeController#index (for 203.157.4.235 at 2011-02-24 09:01:48) [GET]
+Rendering template within layouts/extjs_layout
+Rendering code/index
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://203.157.240.10/]
+
+
+Processing ApplicationController#index (for 203.157.4.235 at 2011-02-24 09:01:48) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/chromecal.js" with {:method=>:get}):
+  passenger (2.2.4) lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  passenger (2.2.4) lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:162:in `start'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /tmp/pis-moph/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 203.157.4.235 at 2011-02-24 09:01:49) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/chromecal.js" with {:method=>:get}):
+  passenger (2.2.4) lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  passenger (2.2.4) lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:162:in `start'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /tmp/pis-moph/public/404.html (404 Not Found)
+
+
+Processing CodeQualifyController#read (for 203.157.4.235 at 2011-02-24 09:02:01) [POST]
+  Parameters: {"start"=>"0", "limit"=>"20"}
+
+NoMethodError (undefined method `shortpre' for #<CodeQualify:0x2aaaad4bc7d8>):
+  app/controllers/code_qualify_controller.rb:22:in `read'
+  app/controllers/code_qualify_controller.rb:17:in `collect'
+  app/controllers/code_qualify_controller.rb:17:in `read'
+  passenger (2.2.4) lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  passenger (2.2.4) lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:162:in `start'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /tmp/pis-moph/public/500.html (500 Internal Server Error)
+
+
+Processing CodeController#index (for 203.157.4.235 at 2011-02-24 09:02:04) [GET]
+Rendering template within layouts/extjs_layout
+Rendering code/index
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://203.157.240.10/]
+
+
+Processing ApplicationController#index (for 203.157.4.235 at 2011-02-24 09:02:04) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/chromecal.js" with {:method=>:get}):
+  passenger (2.2.4) lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  passenger (2.2.4) lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:162:in `start'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /tmp/pis-moph/public/404.html (404 Not Found)
+
+
+Processing ApplicationController#index (for 203.157.4.235 at 2011-02-24 09:02:04) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/chromecal.js" with {:method=>:get}):
+  passenger (2.2.4) lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  passenger (2.2.4) lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:162:in `start'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /tmp/pis-moph/public/404.html (404 Not Found)
+
+
+Processing CodeQualifyController#read (for 203.157.4.235 at 2011-02-24 09:02:17) [POST]
+  Parameters: {"start"=>"0", "limit"=>"20"}
+
+NoMethodError (undefined method `shortpre' for #<CodeQualify:0x2aaaad3bbc58>):
+  app/controllers/code_qualify_controller.rb:22:in `read'
+  app/controllers/code_qualify_controller.rb:17:in `collect'
+  app/controllers/code_qualify_controller.rb:17:in `read'
+  passenger (2.2.4) lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  passenger (2.2.4) lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:162:in `start'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /tmp/pis-moph/public/500.html (500 Internal Server Error)
+
+
+Processing CodeQualifyController#read (for 203.157.4.235 at 2011-02-24 09:02:20) [POST]
+  Parameters: {"start"=>"0", "limit"=>"20"}
+
+NoMethodError (undefined method `shortpre' for #<CodeQualify:0x2aaaad929dc0>):
+  app/controllers/code_qualify_controller.rb:22:in `read'
+  app/controllers/code_qualify_controller.rb:17:in `collect'
+  app/controllers/code_qualify_controller.rb:17:in `read'
+  passenger (2.2.4) lib/phusion_passenger/rack/request_handler.rb:91:in `process_request'
+  passenger (2.2.4) lib/phusion_passenger/abstract_request_handler.rb:206:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:376:in `start_request_handler'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/utils.rb:182:in `safe_fork'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:332:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:162:in `start'
+  passenger (2.2.4) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:261:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:254:in `spawn_rails_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/spawn_manager.rb:286:in `handle_spawn_application'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `__send__'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:351:in `main_loop'
+  passenger (2.2.4) lib/phusion_passenger/abstract_server.rb:195:in `start_synchronously'
+
+Rendering /tmp/pis-moph/public/500.html (500 Internal Server Error)
+
+
+Processing CodeQualifyController#read (for 203.157.4.235 at 2011-02-24 09:03:19) [POST]
+  Parameters: {"start"=>"0", "limit"=>"20"}
+Completed in 15ms (View: 0, DB: 2) | 200 OK [http://203.157.240.10/code_qualify/read]
+
+
+Processing CodeQualifyController#read (for 203.157.4.235 at 2011-02-24 09:03:26) [POST]
+  Parameters: {"start"=>"0", "limit"=>"20"}
+Completed in 8ms (View: 0, DB: 1) | 200 OK [http://203.157.240.10/code_qualify/read]

@@ -19,8 +19,8 @@ class CodeQualifyController < ApplicationController
                         :qcode => u.qcode.to_i,
                         :ecode => u.ecode.to_i,
                         :qualify => u.qualify,
-                        :shortpre => u.shortpre,
-                        :longpre => u.longpre,
+                        #:shortpre => u.shortpre,
+                        #:longpre => u.longpre,
                         :stdcode => u.stdcode,
                         :use_status => (u.use_status == '1') ? true : false
                 } }
@@ -30,7 +30,7 @@ class CodeQualifyController < ApplicationController
         def create
                 records = ActiveSupport::JSON.decode(params[:records])
                 if records.type == Hash
-                        if records["id"] == "" and records["qcode"] == "" and records["ecode"] == "" and records["qualify"] == "" and records["shortpre"] == "" and records["longpre"] == "" and records["stdcode"] == "" and records["use_status"] == ""
+                        if records["id"] == "" and records["qcode"] == "" and records["ecode"] == "" and records["qualify"] == "" and   records["stdcode"] == "" and records["use_status"] == ""
                                 return_data = Hash.new()
                                 return_data[:success] = false
                                 render :text => return_data.to_json, :layout => false
@@ -51,8 +51,8 @@ class CodeQualifyController < ApplicationController
                                                 :qcode => store[:qcode],
                                                 :ecode => store[:ecode],
                                                 :qualify => store[:qualify],
-                                                :shortpre => store[:shortpre],
-                                                :longpre => store[:longpre],
+                                                #:shortpre => store[:shortpre],
+                                                #:longpre => store[:longpre],
                                                 :stdcode => store[:stdcode],
                                                 :use_status => store[:use_status]
                                         }
@@ -78,8 +78,8 @@ class CodeQualifyController < ApplicationController
                                 update_record.qcode = records["qcode"]
                                 update_record.ecode = records["ecode"]
                                 update_record.qualify = records["qualify"]
-                                update_record.shortpre = records["shortpre"]
-                                update_record.longpre = records["longpre"]
+                                #update_record.shortpre = records["shortpre"]
+                                #update_record.longpre = records["longpre"]
                                 update_record.stdcode = records["stdcode"]
                                 update_record.use_status = (records["use_status"] == true) ? 1 : 0
                                 if update_record.save
@@ -90,8 +90,8 @@ class CodeQualifyController < ApplicationController
                                                 :qcode => records["qcode"],
                                                 :ecode => records["ecode"],
                                                 :qualify => records["qualify"],
-                                                :shortpre => records["shortpre"],
-                                                :longpre => records["longpre"],
+                                                #:shortpre => records["shortpre"],
+                                                #:longpre => records["longpre"],
                                                 :stdcode => records["stdcode"],
                                                 :use_status => (records["use_status"] == true) ? 1 : 0
                                         }
